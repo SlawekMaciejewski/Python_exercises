@@ -1,8 +1,11 @@
-def add_emp(emp, emp_list=[]): # Pycharm podpowiada aby zamienic pustą listę na None
+from typing import List
+
+
+def add_emp(emp: str, emp_list: List[str]=[]) -> List: # Pycharm podpowiada aby zamienic pustą listę na None
     emp_list.append(emp)
     return emp_list
 
-def add_emp_ok(emp, emp_list=None):
+def add_emp_ok(emp: str, emp_list: List[str]=None) -> List:
     if not emp_list:
         emp_list = []
     emp_list.append(emp)
