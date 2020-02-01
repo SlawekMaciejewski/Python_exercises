@@ -24,6 +24,9 @@ print(queue)
 print(queue.pop())
 print(queue.pop())
 print(queue)
+queue = deque([1, 2, 3, 4, 5, 6, 1, 2, 1, 3, 3, 3, 4, 4, 5, 6])
+print(queue.count(1))
+print(queue.count(3))
 
 
 
