@@ -40,3 +40,6 @@ if __name__ == '__main__':
     truck1 = Truck('EZD1234', 10)
     print(truck1.number_of_wheels)
     print(issubclass(Truck, Car))
+    print(hasattr(toyota_avensis, 'reg_number'))
+    print(getattr(truck1, 'number_of_wheels'))
+    print(getattr(truck1, 'reg', "nie ma takiego atrybutu"))
