@@ -1,4 +1,5 @@
 from collections import defaultdict
+from typing import DefaultDict
 
 
 def count_letters(text: str) -> dict:
@@ -11,14 +12,14 @@ def count_letters(text: str) -> dict:
     return counter
 
 
-def count_letters_defaultdict(text: str) -> dict:
+def count_letters_defaultdict(text: str) -> DefaultDict:
     counter = defaultdict(int)
     for letter in text:
         counter[letter] += 1
     return counter
 
 
-def grouping_labels(pairs_list):
+def grouping_labels(pairs_list: list) -> dict:
     new_list = {}
     for k, v in pairs_list:
         if k not in new_list:
@@ -30,7 +31,7 @@ def grouping_labels(pairs_list):
 
 
 
-def grouping_labels_defaultdict(pairs_lists: list) -> dict:
+def grouping_labels_defaultdict(pairs_lists: list) -> defaultdict:
     new_list = defaultdict(list)
     print(new_list)
     for k, v in pairs_lists:
