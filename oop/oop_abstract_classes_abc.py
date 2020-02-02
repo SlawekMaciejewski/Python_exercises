@@ -28,8 +28,8 @@ class Violin(Instrument):
 
 
 def conductor(instruments: typing.Sequence[Instrument]) -> None:
-    for instrumnet in instruments:
-        instrumnet.play()
+    for instrument in instruments:
+        instrument.play()
 
 
 if __name__ == '__main__':
