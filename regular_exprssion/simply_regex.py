@@ -1,5 +1,5 @@
 import re
-
+print(re.findall(r'.\d', '12'))
 print(re.search(r'ala', 'ale ola ela ala'))
 print(re.search(r'.la', 'ale ola ela ala'))
 
@@ -26,6 +26,7 @@ print(re.subn(r'\w{4}', 'psa', 'Ala ma kota'))
 print(re.subn(r'\w{4}', 'psa', 'Ala ma kota i domek')) # zwraca ile zamian przeprowadzono
 
 it = re.finditer(r'.la', 'ola ala ela')
+it.__next__() # zuzywamy jeden iterator zostanie ala i ela
 for match in it:
     print(match)
 

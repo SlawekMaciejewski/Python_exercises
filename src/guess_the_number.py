@@ -11,7 +11,7 @@ def is_a_number(data: str) -> bool:
         if data.isdigit():
             return True
         else:
-            data = int(data)
+            raise ValueError
     except ValueError:
         print("It's not an integer, enter the correct number ")
         return False
