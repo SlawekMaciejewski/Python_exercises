@@ -104,3 +104,10 @@ venv.bak/
 # mypy
 .mypy_cache/
 tmp.py
+test.txt
+test1.txt
+foo.txt
+bar.txt
+guu.txt
+sample.tar
+test.txt.gz
